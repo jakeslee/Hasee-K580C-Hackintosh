@@ -165,30 +165,16 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enable PCI power management</string>
+				<string>HD4600_VRAM_2048MB</string>
 				<key>Find</key>
 				<data>
-				dU1Ii7voAQAA
+				BgAmCgEDAwMAAAACAAAwAQAAYAAAAABg
 				</data>
 				<key>Name</key>
-				<string>AppleUSBXHCI</string>
+				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
-				601Ii7voAQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Patch MSI or pin interrupts 1</string>
-				<key>Find</key>
-				<data>
-				gUkIAABAAA==
-				</data>
-				<key>Name</key>
-				<string>AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				gUkIAAAAAA==
+				BgAmCgEDAwMAAAACAAAwAQAAkAAAAACA
 				</data>
 			</dict>
 			<dict>
@@ -207,30 +193,16 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable Intel &amp; Fresco USB3.0</string>
+				<string>Second Stage patch</string>
 				<key>Find</key>
 				<data>
-				9oDUAAAAgHU0
+				hcB0a0g=
 				</data>
 				<key>Name</key>
-				<string>AppleUSBXHCI</string>
+				<string>IOGraphicsFamily</string>
 				<key>Replace</key>
 				<data>
-				9oDUAAAAgOs0
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable sleep code</string>
-				<key>Find</key>
-				<data>
-				xoDIAAAAAQ==
-				</data>
-				<key>Name</key>
-				<string>AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				xoDIAAAAAA==
+				McB0W0g=
 				</data>
 			</dict>
 			<dict>
@@ -249,30 +221,16 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>0x0a260006 9MB cursor bytes patch</string>
-				<key>Find</key>
-				<data>
-				BgAmCgEDAwMAAAACAAAwAQAAYAA=
-				</data>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				BgAmCgEDAwMAAAACAAAwAQAAkAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Second Stage patch</string>
 				<key>Find</key>
 				<data>
-				QYjE6xE=
+				AQAAdRc=
 				</data>
 				<key>Name</key>
 				<string>IOGraphicsFamily</string>
 				<key>Replace</key>
 				<data>
-				QYjE6zE=
+				AQAAdBc=
 				</data>
 			</dict>
 			<dict>
@@ -291,6 +249,34 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Disable Intel &amp; Fresco USB3.0</string>
+				<key>Find</key>
+				<data>
+				9oDUAAAAgHU0
+				</data>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				9oDUAAAAgOs0
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Patch MSI or pin interrupts 1</string>
+				<key>Find</key>
+				<data>
+				gUkIAABAAA==
+				</data>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				gUkIAAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Azul-Port_0x5_DP2HDMI</string>
 				<key>Find</key>
 				<data>
@@ -305,6 +291,48 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>Enable PCI power management</string>
+				<key>Find</key>
+				<data>
+				dU1Ii7voAQAA
+				</data>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				601Ii7voAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Second Stage patch</string>
+				<key>Find</key>
+				<data>
+				QYjE6xE=
+				</data>
+				<key>Name</key>
+				<string>IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>
+				QYjE6zE=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable sleep code</string>
+				<key>Find</key>
+				<data>
+				xoDIAAAAAQ==
+				</data>
+				<key>Name</key>
+				<string>AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				xoDIAAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>IOAHCIBlockStorage, Apple SSD</string>
 				<key>Find</key>
 				<data>
@@ -315,48 +343,6 @@
 				<key>Replace</key>
 				<data>
 				AAAAAAAAAAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HD4600_VRAM_2048MB</string>
-				<key>Find</key>
-				<data>
-				BgAmCgEDAwMAAAACAAAwAQAAYAAAAABg
-				</data>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				BgAmCgEDAwMAAAACAAAwAQAAYAAAAACA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Second Stage patch</string>
-				<key>Find</key>
-				<data>
-				hcB0a0g=
-				</data>
-				<key>Name</key>
-				<string>IOGraphicsFamily</string>
-				<key>Replace</key>
-				<data>
-				McB0W0g=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Second Stage patch</string>
-				<key>Find</key>
-				<data>
-				AQAAdRc=
-				</data>
-				<key>Name</key>
-				<string>IOGraphicsFamily</string>
-				<key>Replace</key>
-				<data>
-				AQAAdBc=
 				</data>
 			</dict>
 		</array>
