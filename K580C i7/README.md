@@ -13,7 +13,6 @@ Wi-Fi   : BCM4322(Replaced)
 # Drivers List
 
 ####The drivers is now maintaining by ym2008####
-http://bbs.pcbeta.com/viewthread-1572285-1-1.html
 
 ### DSDT/SSDT
 
