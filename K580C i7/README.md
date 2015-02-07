@@ -3,16 +3,17 @@ Hasee laptop K580C hackintosh drivers and Clover configuration.
 
 # Hasee laptop K580C Hardware List
 
-CPU     : Core i7 4700MQ Haswell
-Chipset : Intel HM86
-GPU     : NVIDIA GT750M/Intel HD4600 Mobile
-Sound   : ALC282
-Ethernet: Realtek RTL8168G/8111G
-Wi-Fi   : BCM4322(Replaced)
+CPU     : Core i7 4700MQ Haswell  
+Chipset : Intel HM86  
+GPU     : NVIDIA GT750M/Intel HD4600 Mobile  
+Sound   : ALC282  
+Ethernet: Realtek RTL8168G/8111G  
+Wi-Fi   : BCM4322(Replaced)  
 
 # Drivers List
 
 ####The drivers is now maintaining by ym2008####
+http://bbs.pcbeta.com/viewthread-1572285-1-1.html
 
 ### DSDT/SSDT
 
