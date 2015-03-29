@@ -37,6 +37,17 @@ Rehabman's RTL 8111 driver.
 
 - Jakes: Use BCM4322 to replace the defualt.
 
+### Track Pad
+
+Synaptics track pad drived by VoodooPS2Controller, Rehabman.
+
+##### Three fingers support
+
+- From top to bottom: Show app's windows.
+- From bottom to top: Mission Control.
+- From left to right: Next space.
+- From right to left: Previus space.
+
 # Contributors
 
 1. ym2008
