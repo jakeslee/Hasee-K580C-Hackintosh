@@ -127,7 +127,7 @@
 						<key>Breakless PS2</key>
 						<array>
 							<string>e01e;Touchpad Fn+f3 is breakless</string>
-							<string>e06e;REVIEW: temporary for case that macro inversion doesnt work...</string>
+							<string>e06e;REVIEW: temporary for case that macro inversion doesn't work...</string>
 						</array>
 						<key>Custom ADB Map</key>
 						<array>
@@ -204,9 +204,15 @@
 						<array>
 							<string>;This section maps ps2 codes (packet format) received quickly (macros) into fake ps2 codes (packet format)</string>
 							<string>;Fn+F1</string>
-							<data>//8CbgAAAAACWwEZ</data>
-							<data>//8C7gAAAAAC2wGZ</data>
-							<data>//8C7gAAAAABmQLb</data>
+							<data>
+							//8CbgAAAAACWwEZ
+							</data>
+							<data>
+							//8C7gAAAAAC2wGZ
+							</data>
+							<data>
+							//8C7gAAAAABmQLb
+							</data>
 						</array>
 						<key>MaximumMacroTime</key>
 						<integer>35000000</integer>
@@ -250,7 +256,7 @@
 					<key>ActionSwipeRight</key>
 					<string>3b d, 7b d, 7b u, 3b u</string>
 					<key>ActionSwipeUp</key>
-					<string>3b d, 7e d, 7e u, 3b u</string>
+					<string>a0 d, a0 u</string>
 					<key>Breakless PS2</key>
 					<array>
 						<string>;Items must be strings in the form of breaklessscan (in hex)</string>
@@ -278,7 +284,7 @@
 					<key>Swap capslock and left control</key>
 					<false/>
 					<key>Swap command and option</key>
-					<true/>
+					<false/>
 					<key>Use ISO layout keyboard</key>
 					<false/>
 					<key>alt_handler_id</key>
@@ -631,23 +637,47 @@
 						<array>
 							<string>;This section maps ps2 codes (packet format) received quickly (macros) into fake ps2 codes (packet format)</string>
 							<string>;Fn+F4</string>
-							<data>//8CZAAAAAABOAE+</data>
-							<data>//8C5AAAAAABvgG4</data>
+							<data>
+							//8CZAAAAAABOAE+
+							</data>
+							<data>
+							//8C5AAAAAABvgG4
+							</data>
 							<string>;F5 (without Fn)</string>
-							<data>//8CZQEAAAABPw==</data>
-							<data>//8C5QEAAAABvw==</data>
+							<data>
+							//8CZQEAAAABPw==
+							</data>
+							<data>
+							//8C5QEAAAABvw==
+							</data>
 							<string>;Fn+Ctrl+F6</string>
-							<data>//8CJwAD//8CZg==</data>
-							<data>//8CpwAD//8C5g==</data>
+							<data>
+							//8CJwAD//8CZg==
+							</data>
+							<data>
+							//8CpwAD//8C5g==
+							</data>
 							<string>;Ctrl+F6</string>
-							<data>//8CJwAD//8CQA==</data>
-							<data>//8CpwAD//8CwA==</data>
+							<data>
+							//8CJwAD//8CQA==
+							</data>
+							<data>
+							//8CpwAD//8CwA==
+							</data>
 							<string>;Fn+F8</string>
-							<data>//8CaAAAAAACHQE4AQ8=</data>
-							<data>//8C6AAAAAABjwG4Ap0=</data>
+							<data>
+							//8CaAAAAAACHQE4AQ8=
+							</data>
+							<data>
+							//8C6AAAAAABjwG4Ap0=
+							</data>
 							<string>;Fn+F10</string>
-							<data>//8CagAAAAACWwEZ</data>
-							<data>//8C6gAAAAABmQLb</data>
+							<data>
+							//8CagAAAAACWwEZ
+							</data>
+							<data>
+							//8C6gAAAAABmQLb
+							</data>
 						</array>
 						<key>Macro Translation</key>
 						<array>
