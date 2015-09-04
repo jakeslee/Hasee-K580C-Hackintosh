@@ -37,12 +37,7 @@
 			<key>EnableC7</key>
 			<true/>
 			<key>Generate</key>
-			<dict>
-				<key>CStates</key>
-				<false/>
-				<key>PStates</key>
-				<false/>
-			</dict>
+			<false/>
 			<key>UnderVoltStep</key>
 			<string>1</string>
 		</dict>
@@ -50,7 +45,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>nv_disable=1 kext-dev-mode=1</string>
+		<string>kext-dev-mode=1</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -99,8 +94,8 @@
 	<dict>
 		<key>Hide</key>
 		<array>
-			<string>Windows</string>
 			<string>BOOTX64.EFI</string>
+			<string>Windows</string>
 		</array>
 		<key>Language</key>
 		<string>zh_CN:0</string>
@@ -151,48 +146,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Disable XHCI 1.0 check</string>
-				<key>Find</key>
-				<data>
-				QbzHAgDgPQABAAA=
-				</data>
-				<key>Name</key>
-				<string>AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				QbzHAgDgPQAAAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HD4600_VRAM_2048MB</string>
-				<key>Find</key>
-				<data>
-				BgAmCgEDAwMAAAACAAAwAQAAYAAAAABg
-				</data>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				BgAmCgEDAwMAAAACAAAwAQAAkAAAAACA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Patch MSI or pin interrupts 2</string>
-				<key>Find</key>
-				<data>
-				QcdHCAAAQAA=
-				</data>
-				<key>Name</key>
-				<string>AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				QcdHCAAAAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Second Stage patch</string>
 				<key>Find</key>
 				<data>
@@ -207,100 +160,44 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Patch_to_ALC282 (xml.zl to zml.zl)</string>
+				<string>IOAHCIBlockStorage, Apple SSD</string>
 				<key>Find</key>
 				<data>
-				eG1sLnps
+				QVBQTEUgU1NEAA==
 				</data>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
-				em1sLnps
+				AAAAAAAAAAAAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Second Stage patch</string>
+				<string> 10.9-10.10-HD4600_HDMI_Audio-2of2</string>
 				<key>Find</key>
 				<data>
-				AQAAdRc=
+				PQwKAAA=
 				</data>
 				<key>Name</key>
-				<string>IOGraphicsFamily</string>
+				<string>AppleHDAController</string>
 				<key>Replace</key>
 				<data>
-				AQAAdBc=
+				PQwMAAA=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>patch_vid_pid</string>
+				<string>10.10-Azul-Port_0x6-DP2HDMI</string>
 				<key>Find</key>
 				<data>
-				YgLsEA==
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				ggLsEA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable Intel &amp; Fresco USB3.0</string>
-				<key>Find</key>
-				<data>
-				9oDUAAAAgHU0
-				</data>
-				<key>Name</key>
-				<string>AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				9oDUAAAAgOs0
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Patch MSI or pin interrupts 1</string>
-				<key>Find</key>
-				<data>
-				gUkIAABAAA==
-				</data>
-				<key>Name</key>
-				<string>AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				gUkIAAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Azul-Port_0x5_DP2HDMI</string>
-				<key>Find</key>
-				<data>
-				AQUJAAAEAACHAAAA
+				AgQKAAAEAACHAAAA
 				</data>
 				<key>Name</key>
 				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
-				AQUJAAAIAAAGAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Enable PCI power management</string>
-				<key>Find</key>
-				<data>
-				dU1Ii7voAQAA
-				</data>
-				<key>Name</key>
-				<string>AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>
-				601Ii7voAQAA
+				AgQKAAAIAAAGAAAA
 				</data>
 			</dict>
 			<dict>
@@ -319,30 +216,100 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable sleep code</string>
+				<string>Patch_to_ALC282 (xml.zl to zml.zl)</string>
 				<key>Find</key>
 				<data>
-				xoDIAAAAAQ==
+				eG1sLnps
 				</data>
 				<key>Name</key>
-				<string>AppleUSBXHCI</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
-				xoDIAAAAAA==
+				em1sLnps
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>IOAHCIBlockStorage, Apple SSD</string>
+				<string>patch_vid_pid</string>
 				<key>Find</key>
 				<data>
-				QVBQTEUgU1NEAA==
+				YgLsEA==
 				</data>
 				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
-				AAAAAAAAAAAAAA==
+				ggLsEA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.9-10.10-HD4600_HDMI_Audio-1of2</string>
+				<key>Find</key>
+				<data>
+				PQsMAAA=
+				</data>
+				<key>Name</key>
+				<string>AppleHDAController</string>
+				<key>Replace</key>
+				<data>
+				PQwMAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.10-Azul-Port_0x7-DP2HDMI</string>
+				<key>Find</key>
+				<data>
+				AwYIAAAEAAARAAAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				AwYIAAAIAAAGAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>0x0a260006 9MB cursor bytes patch VRAM 2048MB</string>
+				<key>Find</key>
+				<data>
+				BgAmCgEDAwMAAAACAAAwAQAAYAAAAABg
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				BgAmCgEDAwMAAAACAAAwAQAAkAAAAACA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Second Stage patch</string>
+				<key>Find</key>
+				<data>
+				AQAAdRc=
+				</data>
+				<key>Name</key>
+				<string>IOGraphicsFamily</string>
+				<key>Replace</key>
+				<data>
+				AQAAdBc=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.10-Azul-Port_0x5-DP2HDMI</string>
+				<key>Find</key>
+				<data>
+				AQUJAAAEAACHAAAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				AQUJAAAIAAAGAAAA
 				</data>
 			</dict>
 		</array>
@@ -376,16 +343,11 @@
 		<key>ProductName</key>
 		<string>MacBookPro11,2</string>
 		<key>SerialNumber</key>
-		<string>C02KQKVCFD56</string>
+		<string>C02LD164FD56</string>
 		<key>Trust</key>
 		<false/>
 		<key>Version</key>
 		<string>1.0</string>
-	</dict>
-	<key>SystemParameters</key>
-	<dict>
-		<key>CustomUUID</key>
-		<string>CF9D0809-BB8D-3218-86E5-3AC218C1FA46</string>
 	</dict>
 </dict>
 </plist>
